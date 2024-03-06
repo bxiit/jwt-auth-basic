@@ -1,0 +1,21 @@
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb+srv://bxit:asdasd@cluster0.bmb5fgc.mongodb.net/workout
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost_8088/realms/eselpo
+server:
+  port: 8081
+
+jwt:
+  secret-key: secret
+
+logging:
+  level:
+    org.springframework:
+      security: debug
+      web: debug
